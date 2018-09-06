@@ -27,6 +27,8 @@ function lesson3_data_viz() {
        })
        .attr("r", circle_rad);
 
+    console.log(data);
+
     $("#main_container")
         .append("<button type=\"button\" class=\"btn btn-default btn-lg\" onclick='lesson3_data_viz()' id='lesson3_randomize_data'>" +
             "Randomize data" +

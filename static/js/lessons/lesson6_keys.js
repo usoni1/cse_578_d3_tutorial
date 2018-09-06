@@ -100,10 +100,10 @@ function lesson6_keys() {
             .duration(1000)
             .call(yAxis);
     };
-    console.log(last_key);
+    // console.log(last_key);
     var add_data_l4 = function () {
         last_key++;
-        console.log(last_key);
+        // console.log(last_key);
         data.push({
             key: last_key,
             value: getRandomInt(min_val, max_val)
