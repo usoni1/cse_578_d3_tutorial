@@ -3,32 +3,49 @@
 <head>
     <meta charset="UTF-8">
 
-{#    css for libraries#}
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap-grid.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap-reboot.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <style>
+        .container {
+            width: 95vh;
+            max-width: 1000px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
-{#    Javascript libraries#}
-    <script src="{{ url_for('static', filename='js/lib/jquery-3.3.1.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lib/bootstrap/bootstrap.bundle.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lib/bootstrap/bootstrap.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lib/d3.js') }}" type="text/javascript" ></script>
+        #main_container {
+            border-color: #007bff;
+            border-style: dashed;
+        }
+
+        #select_viz {
+            max-width: 25vh;
+        }
+    </style>
+
+    <link rel="stylesheet" href="static/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="static/css/bootstrap/bootstrap-grid.css">
+    <link rel="stylesheet" href="static/css/bootstrap/bootstrap-reboot.css">
+
+
+
+    <script src="static/js/lib/jquery-3.3.1.js" type="text/javascript" ></script>
+    <script src="static/js/lib/bootstrap/bootstrap.bundle.js" type="text/javascript" ></script>
+    <script src="static/js/lib/bootstrap/bootstrap.js" type="text/javascript" ></script>
+    <script src="static/js/lib/d3.js" type="text/javascript" ></script>
 
 
     <!--self css libraries-->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="/static/css/index.css">
 
     <!--self libraries-->
-    <script src="{{ url_for('static', filename='js/util.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lessons/lesson1_data_simple.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lessons/lesson2_data_actual.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lessons/lesson3_data_viz.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lessons/lesson4_enter_exit.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lessons/lesson5_scales.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lessons/lesson6_keys.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/lessons/lesson7_pie_chart.js') }}" type="text/javascript" ></script>
-    <script src="{{ url_for('static', filename='js/initializations.js') }}" type="text/javascript" ></script>
+    <script src="static/js/util.js" type="text/javascript" ></script>
+    <script src="static/js/lessons/lesson1_data_simple.js" type="text/javascript" ></script>
+    <script src="static/js/lessons/lesson2_data_actual.js" type="text/javascript" ></script>
+    <script src="static/js/lessons/lesson3_data_viz.js" type="text/javascript" ></script>
+    <script src="static/js/lessons/lesson4_enter_exit.js" type="text/javascript" ></script>
+    <script src="static/js/lessons/lesson5_scales.js" type="text/javascript" ></script>
+    <script src="static/js/lessons/lesson6_keys.js" type="text/javascript" ></script>
+    <script src="static/js/lessons/lesson7_pie_chart.js" type="text/javascript" ></script>
+    <script src="static/js/initializations.js" type="text/javascript" ></script>
 
 
     <!--Lesson-1 CONSOLE-->
