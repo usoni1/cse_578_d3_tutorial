@@ -18,6 +18,9 @@ function initialize() {
            else if(viz === "lesson6_keys") {
                lesson6_keys();
            }
+           else if(viz === "lesson7_pie_chart") {
+               lesson7_pie_chart();
+           }
            else {
                console.log("Wrong Viz selected");
            }
