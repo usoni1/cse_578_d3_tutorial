@@ -13,10 +13,18 @@
     <script src="{{ url_for('static', filename='js/lib/jquery-3.3.1.js') }}" type="text/javascript" ></script>
     <script src="{{ url_for('static', filename='js/lib/bootstrap/bootstrap.bundle.js') }}" type="text/javascript" ></script>
     <script src="{{ url_for('static', filename='js/lib/bootstrap/bootstrap.js') }}" type="text/javascript" ></script>
+    <script src="{{ url_for('static', filename='js/lib/d3.js') }}" type="text/javascript" ></script>
 
     <!--Font Libraries-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" crossorigin="anonymous">
 
+    <!--self css libraries-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+    <!--self libraries-->
+    <script src="{{ url_for('static', filename='js/util.js') }}" type="text/javascript" ></script>
+    <script src="{{ url_for('static', filename='js/lessons/lesson1_data_simple.js') }}" type="text/javascript" ></script>
+    <script src="{{ url_for('static', filename='js/initializations.js') }}" type="text/javascript" ></script>
 
     <!--Lesson-1 CONSOLE-->
     <script>
@@ -48,8 +56,8 @@
                     </button>
 
                     <select class="custom-select" id="select_viz">
-                      <option selected>Teaching Console and SVG</option>
-                      <option value="1">One</option>
+                      <option selected value="teaching_console">Teaching Console and SVG</option>
+                      <option value="lesson1_data">Lesson1 Data</option>
                       <option value="2">Two</option>
                       <option value="3">Three</option>
                     </select>
