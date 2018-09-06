@@ -12,6 +12,11 @@ function initialize() {
                lesson3_data_viz();
            } else if(viz === "lesson4_data_viz_enter_exit") {
                lesson4_enter_exit();
+           } else if(viz === "lesson5_scales") {
+               lesson5_scales();
+           }
+           else if(viz === "lesson6_keys") {
+               lesson6_keys();
            }
            else {
                console.log("Wrong Viz selected");

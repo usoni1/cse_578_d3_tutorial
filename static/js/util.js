@@ -7,6 +7,7 @@ function clean_up_svg() {
     $('#lesson3_randomize_data').remove();
     $('#add_data_l4').remove();
     $('#delete_data_l4').remove();
+    $("input:text").remove();
 
 }
 
