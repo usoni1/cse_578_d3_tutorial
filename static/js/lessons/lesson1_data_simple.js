@@ -12,5 +12,21 @@ function lesson1_data_simple() {
             return "single element with data: " + d;
         })
         .attr("x", 100)
-        .attr("y", 100);
+        .attr("y", 100)
+        .attr("id", "simple_data");
+
+    // adds multiple elements in svg and associates data with all of them
+    for (var i=0; i <= 4; i++) {
+        d3
+            .select("#main_svg")
+            .append("text")
+            .datum(data[i])
+            .text(function(d) {
+                return "multiple element with data: " + d;
+            })
+            .attr("x", 100)
+            .attr("y", 150 + i*50)
+            .attr("id", "simple_data");
+    }
+
 }

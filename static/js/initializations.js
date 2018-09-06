@@ -4,9 +4,16 @@ function initialize() {
            var viz = $("#select_viz option:selected").val();
            if(viz === "teaching_console"){
                location.reload();
-           } else if(viz === "lesson1_data") {
+           } else if(viz === "lesson1_data_simple") {
                lesson1_data_simple();
-           } else {
+           } else if(viz === "lesson2_data_actual") {
+               lesson2_data_actual();
+           } else if(viz === "lesson3_data_viz") {
+               lesson3_data_viz();
+           } else if(viz === "lesson4_data_viz_enter_exit") {
+               lesson4_enter_exit();
+           }
+           else {
                console.log("Wrong Viz selected");
            }
         });
